@@ -15,7 +15,7 @@ cout << "Or in a more familiar form: " << answer.real()
 
 // answer++;
 //#############Answer to Question 3.1###################
-//Because we want to add a integer on a complex type (types not compatible).
+//Because we want to add a integer to a complex type (types not compatible).
 //############################################
 
 return 0;

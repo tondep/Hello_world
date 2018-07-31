@@ -13,7 +13,7 @@ int main()
 	int counter=1, number=0;
 	while(counter<=6)
 	{
-		cout<< "Enter your prediction:  "<< counter<< endl;
+		cout<< "Enter your Guess:  "<< counter<< endl;
 		cin>> number;
 		
 		if (number==random)
@@ -24,9 +24,9 @@ int main()
 		else
 		{
 			if (number< random)
-				cout<<"Guess lower\n\n";
+				cout<<"Guess Higher\n\n";
 			else
-				cout<< "Guess higher\n\n";
+				cout<< "Guess Lower\n\n";
 		}
 		
 		if (counter==5)

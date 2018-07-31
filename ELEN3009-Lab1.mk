@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=User One
-Date                   :=27/07/2018
+Date                   :=31/07/2018
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=g++
 SharedObjectLinkerName :=g++ -shared -fPIC
@@ -52,7 +52,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := ar rcus
 CXX      := g++
 CC       := gcc
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS := -std=c++17 -g -O0 -std=c++17 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := as
@@ -62,7 +62,7 @@ AS       := as
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Exercise-2_1.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Exercise-3_1.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Exercise-2_1.cpp$(ObjectSuffix): Exercise-2_1.cpp $(IntermediateDirectory)/Exercise-2_1.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/User One/Documents/ELEN3009/ELEN3009-Lab1/Exercise-2_1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Exercise-2_1.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Exercise-2_1.cpp$(DependSuffix): Exercise-2_1.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Exercise-2_1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Exercise-2_1.cpp$(DependSuffix) -MM Exercise-2_1.cpp
+$(IntermediateDirectory)/Exercise-3_1.cpp$(ObjectSuffix): Exercise-3_1.cpp $(IntermediateDirectory)/Exercise-3_1.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/User One/Documents/ELEN3009/ELEN3009-Lab1/Exercise-3_1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Exercise-3_1.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Exercise-3_1.cpp$(DependSuffix): Exercise-3_1.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Exercise-3_1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Exercise-3_1.cpp$(DependSuffix) -MM Exercise-3_1.cpp
 
-$(IntermediateDirectory)/Exercise-2_1.cpp$(PreprocessSuffix): Exercise-2_1.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Exercise-2_1.cpp$(PreprocessSuffix) Exercise-2_1.cpp
+$(IntermediateDirectory)/Exercise-3_1.cpp$(PreprocessSuffix): Exercise-3_1.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Exercise-3_1.cpp$(PreprocessSuffix) Exercise-3_1.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
