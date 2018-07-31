@@ -5,10 +5,9 @@
 
 
 using namespace std; 
-
-int main()
+int guessingGame()
 {
-	srand((unsigned)time(0));
+		srand((unsigned)time(0));
 	int random= rand()%100;
 	int counter=1, number=0;
 	while(counter<=6)
@@ -38,5 +37,10 @@ int main()
 		}
 		counter++;
 	}
+	return 1;
+}
+int main()
+{
+	guessingGame();
 }
 
